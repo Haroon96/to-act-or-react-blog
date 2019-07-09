@@ -1,27 +1,30 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans|Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Noto+Sans|Merriweather&display=swap');
 
 body {
     margin: 0;
     padding: 0;
+    background: rgb(216,223,229);
 }
 
 section {
-    font-family: 'Merriweather';
-    font-size: 16px;
-}
-
-.reddit-orange {
-    color: rgb(255,69,0);
+    font-family: 'Noto Sans';
 }
 
 .heading {
-    font-family: 'Fira Sans';
+    font-family: 'IBM Plex Sans';
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.menubar, .mainbody {
-    padding: 12px;
+.mainbody {
+    padding: 48px 12px;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+.menubar {
+    padding: 12px 24px;
 }
 
 .menubar {
@@ -29,12 +32,10 @@ section {
     border-left: none;
     border-right: none;
     align-items: center;
-    margin-top: 24px;
     position: sticky;
     top: 0;
     background: white;
-    border-top: solid 1px rgba(0,0,0,0.1);
-    border-bottom: solid 1px rgba(0,0,0,0.1);
+    border-bottom: solid 1px rgba(28,28,28,0.1);
 }
 
 .menubar img {
@@ -45,18 +46,77 @@ section {
     list-style: none;
     display: flex;
     margin: 0;
-    margin-top: 3px;
     margin-left: auto;
 }
 
 .menubar ul > li {
+    padding: 8px 32px;
     margin-left: 48px;
-    font-size: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(0,121,211);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menubar ul > li:hover:not(.active) {
+    color: rgb(0,150, 230);
+}
+
+.menubar ul > li.active {
+    background: rgb(0,121,211);
+    color: white;
+    border-radius: 4px;
 }
 
 .intro {
+    background: #fff;
+    border: solid 1px rgba(0,0,0,0.3);
+    padding: 16px;
+    border-radius: 3px;
+}
+
+.intro:hover {
+    border: solid 1px rgba(0,0,0,0.5);
+}
+
+section p {
+    margin: 0;
+    padding: 0;
+}
+
+.text {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 26px;
+    color: rgb(26,26,27);
+}
+
+.action-table-container {
+    padding: 16px;
     background: #f5f5f5;
-    border: solid 1px rgba(0,0,0,0.1);
-    padding: 8px 24px;
+    width: 80%;
+    margin: 0 auto;
     border-radius: 4px;
+}
+
+.action-table {
+    font-size: 0.8em;
+    border-collapse: collapse;
+    color: #333;
+}
+
+.action-table td, th {
+    padding: 4px;
+    vertical-align: top;
+    border-bottom: solid 1px rgba(0,0,0,0.2);
+}
+
+.table-desc {
+    font-style: italic;
+    font-size: 0.95em;
+    color: #666;
+    text-align: center;
+    display: block;
+    font-family: serif;
 }
