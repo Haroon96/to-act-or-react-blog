@@ -5,11 +5,13 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <nav class="menubar heading">
+        <div class="titlebar">        
             <img src="img/logo.png" alt="to act or react?" />
+        </div>
+        <nav class="menubar heading">
             <ul>
-                <li class="active">Link 1</li>
-                <li>Link 2</li>
+                <li class="active">Introduction</li>
+                <li>Subreddit Evolution</li>
                 <li>Link 3</li>
                 <li>Link 4</li>
                 <li>Link 5</li>
@@ -17,7 +19,7 @@
             </ul>
         </nav>
         <main class="mainbody">
-            <section class="intro">
+            <section class="section">
                 <p class="heading">Introduction</p>
                 <p class="text">
                     Reddit, "the front page of the internet", has often found its communities play a prominent role in the origination and propagation of hateful discourse. The sheer number of posts and comments each day makes community moderation an arduous task for the handful of administrators on Reddit. Consequently, transgressions continue unchecked until they leak into the real world, at which point the media pressure leaves Reddit no choice but to take action. 
@@ -25,7 +27,6 @@
                 <p class="text">
                     This <b>reactive</b> approach to content moderation hasn't worked well for Reddit. There are several examples <span class="italic-text">(see <a href="javascript:scrollTo('action-table-anchor')">Table 1</a>)</span> of hateful discourse on Reddit reaching mainstream media, whose subsequent backlash prompts the moderators to take action. The action taken can range from a simple quarantine to an outright ban for that particular community. However, these post-hoc steps are merely damage control as the real harm has already been done.
                 </p>
-
                 <div class="right-note">
                     Reddit's latest content policy prohibits content if it,
                     <ul>
@@ -44,7 +45,7 @@
                     The Reddit content policy defines the type of content that is acceptable for posting on the platform. With modest beginnings, the policy has seen several revisions over the years since. These revisions were often made in response to media backlash over controversial posts. However, the policy itself holds no sway until it is adhered to. Again, the moderators responsible for ensuring this are outnumbered by the sheer number of posts and comments.
                 </p>
                 <p class="text">
-                    In this project, we investigate the feasibility of proactive moderation on Reddit – i.e., proactively identifying communities at risk of committing offenses that previously resulted in bans for other communities. This approach provides insight into how community content and its user base are evolving. This limits the 
+                    In this project, we investigate the feasibility of proactive moderation on Reddit – i.e., proactively identifying communities at risk of committing offenses that previously resulted in bans for other communities. This approach provides insight into how the content of a community and its user base evolve over time. This alleviates the need for human moderators to actively review content for identifying policy violations. Knowing that a community is gravitating towards hateful content allows pre-emptive measures to be taken to control the fallout.
                 </p>
                 <div class="clear-float"></div>
                 <div class="table-container">
@@ -106,7 +107,52 @@
                         </tbody>
                     </table>
                 </div>
-                <span class="table-desc">Table 1: Hateful events on Reddit and consequent actions taken</span>
+                <span class="table-desc caption">Table 1: Hateful events on Reddit and consequent actions taken</span>
+            </section>
+
+            <section class="section">
+                <p class="heading">Subreddit Evolution</p>
+                <p class="text">
+                    Communities on Reddit are known as subreddits. A subreddit is meant to either serve as a common forum for discussion or cater to a niche interest among the Reddit community. It is reasonable to conclude that any particular subreddit would achieve topical and user stability after some time. Because subreddits are created for a particular purpose, they should ideally remain relevant to that purpose throughout their existence. However, results from our study prove that this is not the case.
+                </p>
+                <div class="table-container">
+                    <div id="h1-figure-table-anchor" style="position: relative; top: -100px; left:0;"></div>
+                    <table class="figure-table">
+                        <tr>
+                            <td>
+                                <img src="img/h1/DatasetDistributionContentEvolutionLog.png">
+                            </td>
+                            <td>
+                                <img src="img/h1/DatasetDistributionUserEvolutionLog.png">
+                            </td>
+                        </tr>
+                        <tr class="caption">
+                            <td>
+                                <b>(a)</b> (log scale) Distribution of mean monthly topic evolution
+                            </td>
+                            <td>
+                                <b>(b)</b> (log scale) Distribution of mean monthly user base evolution
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="img/h1/MeanContentBaseEvolution.png">
+                            </td>
+                            <td>
+                                <img src="img/h1/MeanUserBaseEvolution.png">
+                            </td>
+                        </tr>
+                        <tr class="caption">
+                            <td>
+                                <b>(c)</b> (log scale) Subreddit age vs. magnitude of topic evolution
+                            </td>
+                            <td>
+                                <b>(d)</b> (log scale) Subreddit age vs. magnitude of user base evolution
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <span class="table-desc caption">Figure 1: Topical and User evolution of subreddits</span>
             </section>
         </main>
         <script src="script.js"></script>
