@@ -161,6 +161,49 @@
                 <p class="text"> In analyzing different categories of subreddits we see a trend of political and social discourse subreddits having higher frequencies in DH and DB. One of these subreddits we examine is the infamous r/The_Donald. Now quarantined, r/The_Donald has found itself being discussed regularly in the mainstream media as the biggest pro-Trump forum. We follow the evolution of The_Donald since its inception to understand its beginnings and convergence towards hateful political subreddits. </p>
 				<h1> img/the_donald/The_Donald_evolution.html  here</h1>
 			</section>
+            <section class="section">
+                <p class="heading">Predicting Hateful Evolution</p>
+				<p class="text">So far we have proved that subreddits are very unstable when it comes to users and content. But we have also discovered that Hateful and Banned subreddits have a different evolving pattern as mentioned above. So, We investigated if we can determine what contributes to a subreddits evolution in becoming a banned or hateful and how soon can we predict this evolution. This would help reddit moderate proactively. </p>
+                <div class="table-container">
+                    <div id="fig2-anchor" style="position: relative; top: -100px; left:0;"></div>
+                    <table class="figure-table">
+                        <tr>
+                            <td>
+                                <img id="fig2a" src="img/h2/model.png">
+                            </td>
+                        </tr>
+                        <tr class="caption">
+                            <td>
+								<b>(a)</b> Predictive model
+							</td>
+                        </tr>
+                    </table>
+                </div>
+				<p class="text">
+For this we train Machine Learning (ML) models which predict a label for a subreddit. Labels include hateful, banned and benign. For this we need training data and some features associated with that data. We cover various features like label of neighbour subreddits, how active a subreddit is or how many moderators a subreddit has.
+
+We also divide our data of each subreddit into 4 quarters of its lifetime to allow us to see what feature is important in what time of a subreddits life. Our models were able to predict labels for a subreddit with a high accuracy and F1 score. Also we were able to do this pretty early in a subreddits life, and not just this we identified that being close to hateful and banned subreddits is a strong indicator or a subreddits negative evolution.
+
+Our models predicted the_donald to be a banned subreddit when it was currently not banned and soon enough reddit has quarantined the_donald.
+				</p>
+                <div class="table-container">
+                    <div id="fig3-anchor" style="position: relative; top: -100px; left:0;"></div>
+                    <table class="figure-table">
+                        <tr>
+                            <td>
+                                <img id="fig3" src="img/h2/accuracy_table.png">
+                            </td>
+                        </tr>
+                        <tr class="caption">
+                            <td>
+								<b>(a)</b> Performance of our classifier models and the most important class of features used by the models. Q1 denotes that the classifier only had access
+to features from the first quarter of the subreddit lifespans, Q1+Q2 denotes access to the first half of the lifespan, Q1+Q2+Q3 denotes access to the first
+three-quarters, and Total denotes access to the entire lifespan.
+							</td>
+                        </tr>
+                    </table>
+                </div>
+			</section>
         </main>
         <script src="script.js"></script>
     </body>
