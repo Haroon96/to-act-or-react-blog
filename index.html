@@ -112,17 +112,17 @@
             <section class="section">
                 <p class="heading">Subreddit Evolution</p>
                 <p class="text">
-                    Communities on Reddit are known as subreddits. A subreddit is meant to either serve as a common forum for discussion or cater to a niche interest among the Reddit community. It is reasonable to conclude that any particular subreddit would achieve topical and user stability after some time. Because subreddits are created for a particular purpose, they should ideally remain relevant to that purpose throughout their existence. However, results from our study prove otherwise.
+                    Communities on Reddit are known as subreddits. A subreddit is meant to either serve as a common forum for discussion or cater to a niche interest among the Reddit community. From this, it is reasonable to conclude that any particular subreddit would achieve topical and user stability over time. Because subreddits are created for a particular interest, they should ideally remain relevant to that interest throughout their existence. However, results from our study prove otherwise.
                 </p>
                 <div class="table-container">
-                    <div id="h1-figure-table-anchor" style="position: relative; top: -100px; left:0;"></div>
+                    <div id="fig1-anchor" style="position: relative; top: -100px; left:0;"></div>
                     <table class="figure-table">
                         <tr>
                             <td>
-                                <img src="img/h1/DatasetDistributionContentEvolutionLog.png">
+                                <img id="fig1a" src="img/h1/DatasetDistributionContentEvolutionLog.png">
                             </td>
                             <td>
-                                <img src="img/h1/DatasetDistributionUserEvolutionLog.png">
+                                <img id="fig1b" src="img/h1/DatasetDistributionUserEvolutionLog.png">
                             </td>
                         </tr>
                         <tr class="caption">
@@ -135,10 +135,10 @@
                         </tr>
                         <tr>
                             <td>
-                                <img src="img/h1/MeanContentBaseEvolution.png">
+                                <img id="fig1c" src="img/h1/MeanContentBaseEvolution.png">
                             </td>
                             <td>
-                                <img src="img/h1/MeanUserBaseEvolution.png">
+                                <img id="fig1d" src="img/h1/MeanUserBaseEvolution.png">
                             </td>
                         </tr>
                         <tr class="caption">
@@ -152,6 +152,8 @@
                     </table>
                 </div>
                 <span class="table-desc caption">Figure 1: Topical and User evolution of subreddits</span>
+                <p class="text">We consider a dataset of 3000 subreddits for our study which we refer to as <span class="italic-text">D<sub>A</sub></span>. For a more qualitative analysis, we divide <span class="italic-text">D<sub>A</sub></span> into 3 categories: hateful subreddits <span class="italic-text">D<sub>H</sub></span>, banned subreddits <span class="italic-text">D<sub>B</sub></span>, and subreddits related to both <span class="italic-text">D<sub>H</sub></span> and <span class="italic-text">D<sub>B</sub></span> which we label <span class="italic-text">D<sub>R</sub></span>. For each subreddit, we measure the user base and topical evolution for each month using latent vectors and clustering. <a href="javascript:scrollTo('fig1-anchor')" class="italic-text">Figure 1 (c)</a> and <a href="javascript:scrollTo('fig1-anchor')" class="italic-text">figure 1 (d)</a> show how topics and user base correlate with subreddit age. The discrepancy in the graphs clearly indicates that subreddits do not achieve stability (both user and topical) over time, therefore necessitating constant content monitoring.</p>
+                <p class="text"><a href="javascript:scrollTo('fig1-anchor')" class="italic-text">Figure 1 (a)</a> and <a href="javascript:scrollTo('fig1-anchor')" class="italic-text">figure 1 (b)</a> show the distribution of mean monthly magnitude of topical and active user base evolution for subreddits. Average magnitude of evolution per month is similar, but the long tails vary. We observe that subreddit categories are not a discriminator when considering only the average monthly magnitudes of evolution. However, the distribution of these magnitudes varies by subreddit category. In particular, we observe that subreddits in <span class="italic-text">D<sub>B</sub></span> and <span class="italic-text">D<sub>H</sub></span> are heavier weighted towards lower and higher average monthly magnitudes of evolution. This indicates that <span class="italic-text">(1)</span> some subreddits in <span class="italic-text">D<sub>B</sub></span> and <span class="italic-text">D<sub>H</sub></span> show more signs of being likely to converge to topical and user base stability, and <span class="italic-text">(2)</span> different categories of subreddits might have different evolutionary patterns.</p>
             </section>
         </main>
         <script src="script.js"></script>

@@ -90,7 +90,7 @@ section p {
 .text {
     margin-top: 12px;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 28px;
     color: rgb(26,26,27);
 }
 
@@ -133,7 +133,6 @@ table tr:last-child > td {
 
 .italic-text {
     font-style: italic;
-    color: #666;
     font-family: serif;
 }
 
