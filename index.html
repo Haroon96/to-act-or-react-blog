@@ -163,7 +163,7 @@
 			</section>
             <section class="section">
                 <p class="heading">Predicting Hateful Evolution</p>
-				<p class="text">So far we have proved that subreddits are very unstable when it comes to users and content. But we have also discovered that Hateful and Banned subreddits have a different evolving pattern as mentioned above. So, We investigated if we can determine what contributes to a subreddits evolution in becoming a banned or hateful and how soon can we predict this evolution. This would help reddit moderate proactively. </p>
+				<p class="text">So far we have proved that subreddits are very unstable when it comes to users and content. But we have also discovered that Hateful and Banned subreddits have a different evolving pattern as mentioned above. So, We investigated if we can determine what contributes to a subreddits evolution in becoming a banned or hateful and how soon can we predict this evolution. This would help reddit moderate proactively.</p>
                 <div class="table-container">
                     <div id="fig2-anchor" style="position: relative; top: -100px; left:0;"></div>
                     <table class="figure-table">
@@ -180,11 +180,13 @@
                     </table>
                 </div>
 				<p class="text">
-For this we train Machine Learning (ML) models which predict a label for a subreddit. Labels include hateful, banned and benign. For this we need training data and some features associated with that data. We cover various features like label of neighbour subreddits, how active a subreddit is or how many moderators a subreddit has.
-
-We also divide our data of each subreddit into 4 quarters of its lifetime to allow us to see what feature is important in what time of a subreddits life. Our models were able to predict labels for a subreddit with a high accuracy and F1 score. Also we were able to do this pretty early in a subreddits life, and not just this we identified that being close to hateful and banned subreddits is a strong indicator or a subreddits negative evolution.
-
-Our models predicted the_donald to be a banned subreddit when it was currently not banned and soon enough reddit has quarantined the_donald.
+To predict subreddit hateful evolution we create a dataset of subreddits and collect their data. The data is categorized into multiple categories: Community, Moderators, Users, Structural. We give each subreddit one of three labels: hateful, banned or benign. To capture the history of  subreddits in our dataset we divide each subreddit into 4 quarters of its lifetime this  allows us to see important features in different time of a subreddits life. 
+				</p>
+				<p class="text">
+We train and test multiple models  our dataset including Logistic regression, Decision trees, Random Forest, Neural Network and SVM. Our models were able to predict labels for a subreddit with a high accuracy and F1 score. Moreover we were able to predict a subreddits label early into a subreddits life. One of the most impactful factors in deciding a subreddits label as hateful was its users being active in other hateful and banned subreddits as well.
+				</p>
+				<p class="text">
+Our models also predicted r/The_Donald to be a banned subreddit when it was currently not banned and soon enough reddit has quarantined r/The_Donald.
 				</p>
                 <div class="table-container">
                     <div id="fig3-anchor" style="position: relative; top: -100px; left:0;"></div>
