@@ -167,3 +167,7 @@ table tr:last-child > td {
     border: none;
     text-align: center;
 }
+
+.loading-gif {
+    max-width: 100px;
+}
