@@ -196,6 +196,69 @@
                 </div>
                 <span class="table-desc caption">Figure 3: Performance of our classifier models and the most important class of features used by the models. Q1 denotes that the classifier only had access to features from the first quarter of the subreddit lifespans, Q1+Q2 denotes access to the first half of the lifespan, Q1+Q2+Q3 denotes access to the first three-quarters, and Total denotes access to the entire lifespan.</span>
 			</section>
+            <section class="section">
+                <p class="heading">User Behavior Evolution</p>
+				<p class="text">
+				Our findings suggest that community administration and moderation interventions can be used to pre-emptively mitigate the impact of such communities. In this section we study the evolution of users after they join a subreddit, or a subreddit that they are active in gets banned or quarantined. This analysis will help us measure the impact of moderation and its unseen ramifications. Furthermore, since we are also studying the change in user behaviour, this study helps us understand the effect of hateful communities on users.
+				</p>
+				<p class="text">
+We observe using treatment and control users that users who join hateful subreddits show significant change in language and community participation. Using r/The_Donald as a case study we observe all incoming users and their comments over a period of 40 weeks, comparing these users to their control counterparts shows users get more offensive on a global scale.
+                <div class="table-container">
+                    <div id="fig1-anchor" style="position: relative; top: -100px; left:0;"></div>
+                    <table class="figure-table">
+                        <tr>
+                            <td>
+                                <img id="fig1a" src="img/the_donald/attack.png">
+                            </td>
+                        </tr>
+                        <tr class="caption">
+                            <td>
+                                <b>(a)</b> r/The_Donald users vs Control users attacking comments percentage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img id="fig1b" src="img/the_donald/threat.png">
+                            </td>
+                        </tr>
+                        <tr class="caption">
+                            <td>
+                                <b>(b)</b> r/The_Donald users vs Control users threat comments percentage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img id="fig1c" src="img/the_donald/toxicity.png">
+                            </td>
+                        </tr>
+                        <tr class="caption">
+                            <td>
+                                <b>(c)</b> r/The_Donald users vs Control users toxic comments percentage
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img id="fig1d" src="img/the_donald/insult.png">
+                            </td>
+                        </tr>
+                        <tr class="caption">
+                            <td>
+                                <b>(d)</b> r/The_Donald users vs Control users insulting comments percentage
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <span class="table-desc caption">Figure 4: Change in user langauge after joining r/The_Donald</span>
+				<p class="text">
+				These figures show that users after joining r/The_Donald (Week 0 is their joining date) start posting more Toxic, Insulting and Attacking comments on all communities compared to control users. These results show offensive communities can not be regarded as a bubble and their ill effects can be seen globally, therefore the existence and acceptance of such communities can not be ignored.
+				</p>
+
+				<p class="text">
+				We also look at the community participation change after users first engagement in r/The_Donald. The results show that hateful communities can indeed operate as offensive and hateful gateways introducing users to more offensive communities and initiating a positive feedback loop.
+				</p>
+				<h1> img/the_donald/User_Behaviour_subreddits.html  here</h1>
+				This figure plots subreddits on an xy plane where higher y value  correlates to higher subreddit frequency after joining r/The_Donald and higher x value correlates with higher subreddit frequency before joining r/The_Donald. We can see increased participation in other hateful subreddits such as r/hillaryforprison, r/the_meltdown and r/metacanada after the date of user engaging in r/The_Donald.
+			</section>
         </main>
         <script src="script.js"></script>
     </body>
