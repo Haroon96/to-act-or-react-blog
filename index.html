@@ -114,10 +114,19 @@
                 <p class="text">
                     Communities on Reddit are known as subreddits. A subreddit is meant to either serve as a common forum for discussion or cater to a niche interest among the Reddit community. From this, it is reasonable to conclude that any particular subreddit would achieve topical and user stability over time. Because subreddits are created for a particular interest, they should ideally remain relevant to that interest throughout their existence. However, results from our study prove otherwise.
                 </p>
-				<h1> resources/h1/subreddit_evolution.html  here</h1>
-                <p class="text">
-					CAPTION: mean user-based evolution of subreddits along with the distribution of mean user-based evolution per month. This figure reflects the instability of subreddits.
-                </p>
+                <div class="table-container">
+                    <div id="graph1-anchor" style="position: relative; top: -100px; left:0;"></div>
+                    <table class="figure-table">
+                        <tr>
+                            <td>
+                                <div id="1ef9d53f-25a6-4f81-a8a8-1e4c926162bc" style="width: 100%; height: 100%;" class="plotly-graph-div"></div>
+                                <img id="sre-loader" src="resources/loading.gif" class="loading-gif">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <span class="table-desc caption">Graph 1: Mean user-based evolution of subreddits along with the distribution of mean user-based evolution per month. This figure reflects the instability of subreddits.</span>
+                <p class="text">We consider a dataset of 3000 subreddits for our study which we refer to as <span class="italic-text">D<sub>A</sub></span>. For a more qualitative analysis, we divide <span class="italic-text">D<sub>A</sub></span> into 3 categories: hateful subreddits <span class="italic-text">D<sub>H</sub></span>, banned subreddits <span class="italic-text">D<sub>B</sub></span>, and subreddits related to both <span class="italic-text">D<sub>H</sub></span> and <span class="italic-text">D<sub>B</sub></span> which we label <span class="italic-text">D<sub>R</sub></span>. For each subreddit, we measure the user base and topical evolution for each month using latent vectors and clustering. <a href="javascript:scrollTo('#fig1-anchor')" class="italic-text">Figure 1 (c)</a> and <a href="javascript:scrollTo('#fig1-anchor')" class="italic-text">Figure 1 (d)</a> show how topics and user base correlate with subreddit age. The discrepancy in the graphs clearly indicates that subreddits do not achieve stability (both user and topical) over time, therefore necessitating constant content monitoring.</p>
                 <div class="table-container">
                     <div id="fig1-anchor" style="position: relative; top: -100px; left:0;"></div>
                     <table class="figure-table">
@@ -156,12 +165,11 @@
                     </table>
                 </div>
                 <span class="table-desc caption">Figure 1: Topical and User evolution of subreddits</span>
-                <p class="text">We consider a dataset of 3000 subreddits for our study which we refer to as <span class="italic-text">D<sub>A</sub></span>. For a more qualitative analysis, we divide <span class="italic-text">D<sub>A</sub></span> into 3 categories: hateful subreddits <span class="italic-text">D<sub>H</sub></span>, banned subreddits <span class="italic-text">D<sub>B</sub></span>, and subreddits related to both <span class="italic-text">D<sub>H</sub></span> and <span class="italic-text">D<sub>B</sub></span> which we label <span class="italic-text">D<sub>R</sub></span>. For each subreddit, we measure the user base and topical evolution for each month using latent vectors and clustering. <a href="javascript:scrollTo('#fig1-anchor')" class="italic-text">Figure 1 (c)</a> and <a href="javascript:scrollTo('#fig1-anchor')" class="italic-text">Figure 1 (d)</a> show how topics and user base correlate with subreddit age. The discrepancy in the graphs clearly indicates that subreddits do not achieve stability (both user and topical) over time, therefore necessitating constant content monitoring.</p>
                 <p class="text"><a href="javascript:scrollTo('#fig1-anchor')" class="italic-text">Figure 1 (a)</a> and <a href="javascript:scrollTo('#fig1-anchor')" class="italic-text">Figure 1 (b)</a> show the distribution of mean monthly magnitude of topical and active user base evolution for subreddits. Average magnitude of evolution per month is similar, but the long tails vary. We observe that subreddit categories are not a discriminator when considering only the average monthly magnitudes of evolution. However, the distribution of these magnitudes varies by subreddit category. In particular, we observe that subreddits in <span class="italic-text">D<sub>B</sub></span> and <span class="italic-text">D<sub>H</sub></span> are heavier weighted towards lower and higher average monthly magnitudes of evolution. This indicates that <span class="italic-text">(1)</span> some subreddits in <span class="italic-text">D<sub>B</sub></span> and <span class="italic-text">D<sub>H</sub></span> show more signs of being likely to converge to topical and user base stability, and <span class="italic-text">(2)</span> different categories of subreddits might have different evolutionary patterns.</p>
                 <p class="text"> In analyzing different categories of subreddits we see a trend of political and social discourse subreddits having higher frequencies in DH and DB. One of these subreddits we examine is the infamous <span class="italic-text">r/The_Donald</span>. Now quarantined, <span class="italic-text">r/The_Donald</span> has found itself being discussed regularly in the mainstream media as the biggest pro-Trump forum. We follow the evolution of <span class="italic-text">r/The_Donald</span> since its inception to understand its beginnings and convergence towards hateful political subreddits. </p>
                 
                 <div class="table-container">
-                    <div id="figx-anchor" style="position: relative; top: -100px; left:0;"></div>
+                    <div id="graph1-anchor" style="position: relative; top: -100px; left:0;"></div>
                     <table class="figure-table">
                         <tr>
                             <td>
@@ -171,7 +179,7 @@
                         </tr>
                     </table>
                 </div>
-                <span class="table-desc caption">Graph 1: Evolution of r/The_Donald over a 40 month period.</span>
+                <span class="table-desc caption">Graph 2: Evolution of r/The_Donald over a 40 month period.</span>
 			</section>
             <section class="section">
                 <p class="heading">Predicting Hateful Evolution</p>
@@ -211,5 +219,6 @@
         </main>
         <script src="script.js"></script>
         <script src="resources/the_donald/the_donald_evolution.js"></script>
+        <script src="resources/h1/subreddit_evolution.js"></script>
     </body>
 </html>
