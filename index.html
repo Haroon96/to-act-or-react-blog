@@ -114,18 +114,6 @@
                 <p class="text">
                     Communities on Reddit are known as subreddits. A subreddit is meant to either serve as a common forum for discussion or cater to a niche interest among the Reddit community. From this, it is reasonable to conclude that any particular subreddit would achieve topical and user stability over time. Because subreddits are created for a particular interest, they should ideally remain relevant to that interest throughout their existence. However, results from our study prove otherwise.
                 </p>
-                <div class="table-container">
-                    <div id="graph1-anchor" style="position: relative; top: -100px; left:0;"></div>
-                    <table class="figure-table">
-                        <tr>
-                            <td>
-                                <div id="1ef9d53f-25a6-4f81-a8a8-1e4c926162bc" style="width: 100%; height: 100%;" class="plotly-graph-div"></div>
-                                <img id="sre-loader" src="resources/loading.gif" class="loading-gif">
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-                <span class="table-desc caption">Graph 1: Mean user-based evolution of subreddits along with the distribution of mean user-based evolution per month. This figure reflects the instability of subreddits.</span>
                 <p class="text">We consider a dataset of 3000 subreddits for our study which we refer to as <span class="italic-text">D<sub>A</sub></span>. For a more qualitative analysis, we divide <span class="italic-text">D<sub>A</sub></span> into 3 categories: hateful subreddits <span class="italic-text">D<sub>H</sub></span>, banned subreddits <span class="italic-text">D<sub>B</sub></span>, and subreddits related to both <span class="italic-text">D<sub>H</sub></span> and <span class="italic-text">D<sub>B</sub></span> which we label <span class="italic-text">D<sub>R</sub></span>. For each subreddit, we measure the user base and topical evolution for each month using latent vectors and clustering. <a href="javascript:scrollTo('#fig1-anchor')" class="italic-text">Figure 1 (c)</a> and <a href="javascript:scrollTo('#fig1-anchor')" class="italic-text">Figure 1 (d)</a> show how topics and user base correlate with subreddit age. The discrepancy in the graphs clearly indicates that subreddits do not achieve stability (both user and topical) over time, therefore necessitating constant content monitoring.</p>
                 <div class="table-container">
                     <div id="fig1-anchor" style="position: relative; top: -100px; left:0;"></div>
@@ -166,6 +154,18 @@
                 </div>
                 <span class="table-desc caption">Figure 1: Topical and User evolution of subreddits</span>
                 <p class="text"><a href="javascript:scrollTo('#fig1-anchor')" class="italic-text">Figure 1 (a)</a> and <a href="javascript:scrollTo('#fig1-anchor')" class="italic-text">Figure 1 (b)</a> show the distribution of mean monthly magnitude of topical and active user base evolution for subreddits. Average magnitude of evolution per month is similar, but the long tails vary. We observe that subreddit categories are not a discriminator when considering only the average monthly magnitudes of evolution. However, the distribution of these magnitudes varies by subreddit category. In particular, we observe that subreddits in <span class="italic-text">D<sub>B</sub></span> and <span class="italic-text">D<sub>H</sub></span> are heavier weighted towards lower and higher average monthly magnitudes of evolution. This indicates that <span class="italic-text">(1)</span> some subreddits in <span class="italic-text">D<sub>B</sub></span> and <span class="italic-text">D<sub>H</sub></span> show more signs of being likely to converge to topical and user base stability, and <span class="italic-text">(2)</span> different categories of subreddits might have different evolutionary patterns.</p>
+                <div class="table-container">
+                    <div id="graph1-anchor" style="position: relative; top: -100px; left:0;"></div>
+                    <table class="figure-table">
+                        <tr>
+                            <td>
+                                <div id="1ef9d53f-25a6-4f81-a8a8-1e4c926162bc" style="width: 100%; height: 100%;" class="plotly-graph-div"></div>
+                                <img id="sre-loader" src="resources/loading.gif" class="loading-gif">
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <span class="table-desc caption">Graph 1: Mean user-based evolution of subreddits along with the distribution of mean user-based evolution per month. This figure reflects the instability of subreddits.</span>    
                 <p class="text"> In analyzing different categories of subreddits we see a trend of political and social discourse subreddits having higher frequencies in DH and DB. One of these subreddits we examine is the infamous <span class="italic-text">r/The_Donald</span>. Now quarantined, <span class="italic-text">r/The_Donald</span> has found itself being discussed regularly in the mainstream media as the biggest pro-Trump forum. We follow the evolution of <span class="italic-text">r/The_Donald</span> since its inception to understand its beginnings and convergence towards hateful political subreddits. </p>
                 
                 <div class="table-container">
@@ -222,13 +222,14 @@
 				Our findings suggest that community administration and moderation interventions can be used to pre-emptively mitigate the impact of such communities. In this section we study the evolution of users after they join a subreddit, or a subreddit that they are active in gets banned or quarantined. This analysis will help us measure the impact of moderation and its unseen ramifications. Furthermore, since we are also studying the change in user behaviour, this study helps us understand the effect of hateful communities on users.
 				</p>
 				<p class="text">
-We observe using treatment and control users that users who join hateful subreddits show significant change in language and community participation. Using r/The_Donald as a case study we observe all incoming users and their comments over a period of 40 weeks, comparing these users to their control counterparts shows users get more offensive on a global scale.
+                    We observe using treatment and control users that users who join hateful subreddits show significant change in language and community participation. Using r/The_Donald as a case study we observe all incoming users and their comments over a period of 40 weeks, comparing these users to their control counterparts shows users get more offensive on a global scale.
+                </p>
                 <div class="table-container">
-                    <div id="fig1-anchor" style="position: relative; top: -100px; left:0;"></div>
+                    <div id="fig4-anchor" style="position: relative; top: -100px; left:0;"></div>
                     <table class="figure-table">
                         <tr>
                             <td>
-                                <img id="fig1a" src="img/the_donald/attack.png">
+                                <img id="fig4a" src="resources/the_donald/attack.png">
                             </td>
                         </tr>
                         <tr class="caption">
@@ -238,7 +239,7 @@ We observe using treatment and control users that users who join hateful subredd
                         </tr>
                         <tr>
                             <td>
-                                <img id="fig1b" src="img/the_donald/threat.png">
+                                <img id="fig4b" src="resources/the_donald/threat.png">
                             </td>
                         </tr>
                         <tr class="caption">
@@ -248,7 +249,7 @@ We observe using treatment and control users that users who join hateful subredd
                         </tr>
                         <tr>
                             <td>
-                                <img id="fig1c" src="img/the_donald/toxicity.png">
+                                <img id="fig4c" src="resources/the_donald/toxicity.png">
                             </td>
                         </tr>
                         <tr class="caption">
@@ -258,7 +259,7 @@ We observe using treatment and control users that users who join hateful subredd
                         </tr>
                         <tr>
                             <td>
-                                <img id="fig1d" src="img/the_donald/insult.png">
+                                <img id="fig4d" src="resources/the_donald/insult.png">
                             </td>
                         </tr>
                         <tr class="caption">
@@ -270,18 +271,60 @@ We observe using treatment and control users that users who join hateful subredd
                 </div>
                 <span class="table-desc caption">Figure 4: Change in user langauge after joining r/The_Donald</span>
 				<p class="text">
-				These figures show that users after joining r/The_Donald (Week 0 is their joining date) start posting more Toxic, Insulting and Attacking comments on all communities compared to control users. These results show offensive communities can not be regarded as a bubble and their ill effects can be seen globally, therefore the existence and acceptance of such communities can not be ignored.
+    				These figures show that users after joining r/The_Donald (Week 0 is their joining date) start posting more Toxic, Insulting and Attacking comments on all communities compared to control users. These results show offensive communities can not be regarded as a bubble and their ill effects can be seen globally, therefore the existence and acceptance of such communities can not be ignored.
 				</p>
-
 				<p class="text">
-				We also look at the community participation change after users first engagement in r/The_Donald. The results show that hateful communities can indeed operate as offensive and hateful gateways introducing users to more offensive communities and initiating a positive feedback loop.
-				</p>
-				<h1> img/the_donald/User_Behaviour_subreddits.html  here</h1>
-				This figure plots subreddits on an xy plane where higher y value  correlates to higher subreddit frequency after joining r/The_Donald and higher x value correlates with higher subreddit frequency before joining r/The_Donald. We can see increased participation in other hateful subreddits such as r/hillaryforprison, r/the_meltdown and r/metacanada after the date of user engaging in r/The_Donald.
+				    We also look at the community participation change after users first engagement in r/The_Donald. The results show that hateful communities can indeed operate as offensive and hateful gateways introducing users to more offensive communities and initiating a positive feedback loop.
+                </p>
+                <div class="table-container">
+                    <div id="graph3-anchor" style="position: relative; top: -100px; left:0;"></div>
+                    <table class="figure-table block">
+                        <tbody class="block">
+                            <tr class="block">
+                                <td class="overflow-x-scroll block">
+                                    <img id="ubs-loader" src="resources/loading.gif" class="loading-gif">
+                                    <span id="d3-div-1-title-div"></span>
+                                    <div class="scattertext" id="d3-div-1"></div>
+                                    <div id="d3-div-1-corpus-stats"></div>
+                                    <div id="d3-div-1-overlapped-terms"></div>
+                                    <form name="d3-div-1-termForm" onSubmit="handleSearch(); return false;">
+                                    <input name="Submit" type="submit" value="Search for term">
+                                    <input type="text" id="d3-div-1-searchTerm" placeholder="Type a word or two&hellip;">
+                                    <span id="d3-div-1-alertMessage" class="alert"></span>
+                                    </form>
+                                    <a name="d3-div-1-snippets"></a>
+                                    <a name="d3-div-1-snippetsalt"></a>
+                                    <div id="d3-div-1-termstats"></div>
+                                    <div id="d3-div-1-overlapped-terms-clicked"></div>
+                                    <div id="d3-div-1-categoryinfo" style="display: hidden"></div>
+                                    <div id="d3-div-2">
+                                        <div class="d3-div-1-contexts">
+                                            <div class="snippet_header" id="d3-div-1-cathead"></div>
+                                            <div class="snippet" id="d3-div-1-cat"></div>
+                                        </div>
+                                        <div id="d3-div-1-notcol" class="d3-div-1-contexts">
+                                            <div class="snippet_header" id="d3-div-1-notcathead"></div>
+                                            <div class="snippet" id="d3-div-1-notcat"></div>
+                                        </div>
+                                        <div id="d3-div-1-neutcol" class="d3-div-1-contexts">
+                                            <div class="snippet_header" id="d3-div-1-neuthead"></div>
+                                            <div class="snippet" id="d3-div-1-neut"></div>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <span class="table-desc caption">Graph 3</span>
+				<a href="javascript:scrollTo('#graph3-anchor')" class="italic-text">Graph 3</a> plots subreddits on an xy plane where higher y value  correlates to higher subreddit frequency after joining r/The_Donald and higher x value correlates with higher subreddit frequency before joining r/The_Donald. We can see increased participation in other hateful subreddits such as r/hillaryforprison, r/the_meltdown and r/metacanada after the date of user engaging in r/The_Donald.
 			</section>
         </main>
         <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.6.0/d3.min.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js" charset="utf-8"></script>
         <script src="resources/the_donald/the_donald_evolution.js"></script>
+        <script src="resources/the_donald/User_Behaviour_subreddits.js"></script>
         <script src="resources/h1/subreddit_evolution.js"></script>
     </body>
 </html>
