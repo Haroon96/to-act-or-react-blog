@@ -9,14 +9,7 @@
             <img src="resources/logo.png" alt="to act or react?" />
         </div>
         <nav class="menubar heading">
-            <ul>
-                <li class="active">Introduction</li>
-                <li>Subreddit Evolution</li>
-                <li>Predicting Hateful Evolution</li>
-                <li>Link 4</li>
-                <li>Link 5</li>
-                <li>Link 6</li>
-            </ul>
+            <ul id="menubar-ul"></ul>
         </nav>
         <main class="mainbody">
             <section class="section">
@@ -180,7 +173,7 @@
                     </table>
                 </div>
                 <span class="table-desc caption">Graph 2: Evolution of r/The_Donald over a 40 month period.</span>
-			</section>
+            </section>
             <section class="section">
                 <p class="heading">Predicting Hateful Evolution</p>
 				<p class="text">So far we have proved that subreddits are very unstable when it comes to users and content. But we have also discovered that Hateful and Banned subreddits have a different evolving pattern as mentioned above. So, We investigated if we can determine what contributes to a subreddits evolution in becoming a banned or hateful and how soon can we predict this evolution. This would help reddit moderate proactively.</p>
@@ -215,7 +208,7 @@
                     </table>
                 </div>
                 <span class="table-desc caption">Figure 3: Performance of our classifier models and the most important class of features used by the models. Q1 denotes that the classifier only had access to features from the first quarter of the subreddit lifespans, Q1+Q2 denotes access to the first half of the lifespan, Q1+Q2+Q3 denotes access to the first three-quarters, and Total denotes access to the entire lifespan.</span>
-			</section>
+            </section>
             <section class="section">
                 <p class="heading">User Behavior Evolution</p>
 				<p class="text">
@@ -269,12 +262,12 @@
                         </tr>
                     </table>
                 </div>
-                <span class="table-desc caption">Figure 4: Change in user langauge after joining r/The_Donald</span>
+                <span class="table-desc caption">Figure 4: Change in user language after joining r/The_Donald</span>
 				<p class="text">
-    				These figures show that users after joining r/The_Donald (Week 0 is their joining date) start posting more Toxic, Insulting and Attacking comments on all communities compared to control users. These results show offensive communities can not be regarded as a bubble and their ill effects can be seen globally, therefore the existence and acceptance of such communities can not be ignored.
+    				These figures show that users after joining <span class="italic-text">r/The_Donald (Week 0 is their joining date)</span> start posting more Toxic, Insulting and Attacking comments on all communities compared to control users. These results show offensive communities can not be regarded as a bubble and their ill effects can be seen globally, therefore the existence and acceptance of such communities can not be ignored.
 				</p>
 				<p class="text">
-				    We also look at the community participation change after users first engagement in r/The_Donald. The results show that hateful communities can indeed operate as offensive and hateful gateways introducing users to more offensive communities and initiating a positive feedback loop.
+				    We also look at the community participation change after users first engagement in <span class="italic-text">r/The_Donald</span>. The results show that hateful communities can indeed operate as offensive and hateful gateways introducing users to more offensive communities and initiating a positive feedback loop.
                 </p>
                 <div class="table-container">
                     <div id="graph3-anchor" style="position: relative; top: -100px; left:0;"></div>
@@ -317,8 +310,10 @@
                     </table>
                 </div>
                 <span class="table-desc caption">Graph 3</span>
-				<a href="javascript:scrollTo('#graph3-anchor')" class="italic-text">Graph 3</a> plots subreddits on an xy plane where higher y value  correlates to higher subreddit frequency after joining r/The_Donald and higher x value correlates with higher subreddit frequency before joining r/The_Donald. We can see increased participation in other hateful subreddits such as r/hillaryforprison, r/the_meltdown and r/metacanada after the date of user engaging in r/The_Donald.
-			</section>
+                <p class="text">
+				    <a href="javascript:scrollTo('#graph3-anchor')" class="italic-text">Graph 3</a> plots subreddits on an xy plane where higher y value  correlates to higher subreddit frequency after joining <span class="italic-text">r/The_Donald</span> and higher x value correlates with higher subreddit frequency before joining <span class="italic-text">r/The_Donald</span>. We can see increased participation in other hateful subreddits such as <span class="italic-text">r/hillaryforprison</span>, <span class="italic-text">r/the_meltdown</span> and <span class="italic-text">r/metacanada</span> after the date of user engaging in <span class="italic-text">r/The_Donald</span>.
+                </p>
+            </section>
         </main>
         <script src="script.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.6.0/d3.min.js" charset="utf-8"></script>

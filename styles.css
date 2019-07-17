@@ -396,3 +396,8 @@ table tr:last-child > td {
 .block {
     display: block;
 }
+
+.section-anchor {
+  position: relative;
+  top: -100px;
+}
