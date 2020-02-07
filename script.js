@@ -40,7 +40,7 @@ function populateNavbar() {
         }
     }
     window.onscroll = function() {
-        let top = document.documentElement.scrollTop;
+        let top = document.documentElement.scrollTop + 1;
         for (let i = 0; i < anchors.length; ++i) {
             lis[i].classList.remove('active');
             if (top >= anchors[i].offsetTop && (i + 1 == anchors.length || top < anchors[i + 1].offsetTop)) {
